@@ -1,0 +1,40 @@
+.Header {
+  padding: 0 48px;
+  background-color: teal;
+  color: white;
+}
+
+.Header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.Header a {
+  text-decoration: none;
+  color: inherit;
+  padding: 24px;
+}
+
+.Header a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: white;
+  display: block
+}
+
+.Header a:hover {
+  background-color: rgba(255, 255, 255, 0.39);
+}
+
+
+.Header_active::after {
+  width: 100% !important;
+}

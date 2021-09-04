@@ -1,0 +1,44 @@
+header {
+  background: rgb(27, 23, 83);
+  background: linear-gradient(90deg, rgba(27, 23, 83, 1) 0%, rgba(121, 9, 9, 1) 48%, rgba(27, 23, 83, 1) 100%);
+  margin: 0;
+  padding: 0;
+}
+
+;
+
+.header {
+  color: white;
+}
+
+.header_links {
+  display: flex;
+  flex-direction: row;
+}
+
+.header_links a {
+  color: white;
+  margin-left: 24px;
+  padding: 24px 16px;
+  display: block;
+  cursor: pointer;
+  transition: background-color .3s ease-out;
+}
+
+.header_links a::after {
+  display: block;
+  height: 2px;
+  background-color: white;
+  margin-top: 2px;
+  content: "";
+  width: 0%;
+  transition: width .2s ease-in-out;
+}
+
+.header_links a:hover {
+  background-color: #ffffff1c;
+}
+
+.header_link_active::after {
+  width: 100% !important;
+}
